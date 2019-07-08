@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="imagehover.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <title>My  own Template</title>
+    <style>
+        html,body
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        *
+        {
+            box-sizing: border-box;
+        }
+        .container1
+        {
+            width: 100%;
+            height: 100vh;
+            
+            background-image: url('b.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            
+            
+        }
+
+        .button
+        {
+            position: absolute;
+            width: 35%;
+            height: 10%;
+            
+            bottom: 10%;
+        }
+
+        .container2
+        {
+            width: 100%;
+            height: 120vh;
+            
+            position: relative;
+            background: #FEAC5E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container3
+        {
+            width: 100%;
+            height: 90vh;
+            
+            display: flex;
+        }
+        .container4
+        {
+            width: 100%;
+            height: 110vh;
+            
+            background: #e53935;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #e35d5b, #e53935);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            display: flex;
+            justify-content: center;
+            position: relative;
+            align-items: center;
+        }
+        .container5
+        {
+            width: 100%;
+            height: 170vh;
+            background: #004FF9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFF94C, #004FF9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFF94C, #004FF9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            
+            position: relative;
+        }
+
+        .container6
+        {
+            width: 100%;
+            height: 40vh;
+            
+            background-color: rgb(127, 140,141);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .text
+        {
+            width: 80%;
+            height: 10%;
+            
+            font-family: 'Lobster', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 40px;
+            position: absolute;
+        }
+        .overlay
+        {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.5;
+        }
+        .btn
+        {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(46, 204, 113);
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 5px;
+            color: white;
+            font-size: 27px;
+            font-family: 'Lobster', cursive;
+        }
+        .btn:hover
+       {
+           background-color: rgb(238, 29, 29);
+       }
+        .icon
+        {
+            width: 80%;
+            height: 70%;
+           
+            display: flex;
+            justify-content: center;
+           position:absolute;
+        }
+        .h1
+        {
+            position: absolute;
+            top: 5%;
+        }
+        .icona,.iconb,.iconc
+        {
+            width: 33%;
+            height: 100%;
+           
+            margin-left: 10px;
+            position: relative;
+        }
+        .circlea
+        {
+            width: 60%;
+            height: 40%;
+
+    
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.40);
+        }
+        .contenta
+        {
+            left: 50%;
+             position: absolute;
+            transform: translateX(-50%);
+            top: 55%; 
+            width: 80%;
+            height: 10%;
+            
+            position: absolute;
+            transform: translateX(-50%);
+            top: 52%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lobster', cursive;
+        }
+        .subcontenta
+        { 
+            width: 80%;
+            height: 30%;
+          color:black;
+            position: absolute;
+            bottom: 3%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Lobster', cursive;
+            
+            
+        }
+        
+        .circleb
+        {
+            width: 60%;
+            height: 40%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.40);
+        }
+        .contentb
+        {
+            left: 50%;
+             position: absolute;
+            transform: translateX(-50%);
+            top: 55%; 
+            width: 80%;
+            height: 10%;
+           
+            position: absolute;
+            transform: translateX(-50%);
+            top: 52%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lobster', cursive;
+        }
+        .subcontentb
+        {
+            width: 80%;
+            height: 30%;
+            
+           position:absolute;
+            bottom: 3%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Lobster', cursive;
+        }
+        
+        .circlec
+        {
+            width: 60%;
+            height: 40%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.40);
+        }
+        .contentc
+        {
+            left: 50%;
+           
+            transform: translateX(-50%);
+            top: 55%; 
+            width: 80%;
+            height: 10%;
+            
+            position: relative;
+            transform: translateX(-50%);
+            top: 52%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lobster', cursive;
+        }
+        .subcontentc
+        {
+            width: 80%;
+            height: 30%;
+          
+            position: absolute;
+            bottom: 3%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Lobster', cursive;
+        }
+       
+        .image,.matter
+        {
+            width: 50%;
+            height: 100%;
+         
+            position: relative;
+        }
+        
+        .matter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:rgb(245,245,245);
+            
+            
+            
+        }
+        .mattera
+        {
+            width: 80%;
+            height: 80%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            flex-direction: column;
+            
+        }
+        
+        .h2
+        {
+            position: absolute;
+            top: 5%;
+        }
+        .item1
+        {
+            
+            width: 80%;
+            height:70%;
+           
+            display: flex;
+            justify-content: center;
+           position:absolute;
+        
+        }
+        .item1a,.item1b,.item1c
+        {
+            
+            width: 33%;
+            height: 100%;
+           
+            margin-left: 10px;
+            position: relative;
+    
+        }
+        .imga
+        {
+            
+            width: 60%;
+            height: 40%;
+            background-image: url('d.jpg');
+            background-size: 100% 100%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 5%;
+           
+        }
+        .dataa
+        {
+            
+            left: 50%;
+             position: absolute;
+            transform: translateX(-50%);
+            top: 55%; 
+            width: 80%;
+            height: 10%;
+        
+            
+            transform: translateX(-50%);
+            top: 52%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lobster', cursive;
+        }
+        .subdataa
+        {  
+       
+           
+           width: 80%;
+           height: 30%;
+         color:white;
+           position: absolute;
+           bottom: 3%;
+           left: 50%;
+           transform: translateX(-50%);
+           font-family: 'Lobster', cursive;
+            
+    
+        }
+        .imgb
+        {
+            
+            width: 60%;
+            height: 40%;
+            background-image: url('e.jpg');
+            background-size: 100% 100%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 5%;
+           
+        }
+        .datab
+        {
+            
+            left: 50%;
+             position: absolute;
+            transform: translateX(-50%);
+            top: 55%; 
+            width: 80%;
+            height: 10%;
+        
+        
+            transform: translateX(-50%);
+            top: 52%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lobster', cursive;
+        }
+        .subdatab
+        {
+            
+           
+            width: 80%;
+           height: 30%;
+         color:white;
+           position: absolute;
+           bottom: 3%;
+           left: 50%;
+           transform: translateX(-50%);
+           font-family: 'Lobster', cursive;
+       
+        }
+        .imgc
+        {
+            
+            width: 60%;
+            height: 40%;
+            background-image: url('f.jpg');
+            background-size: 100% 100%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 5%;
+           
+        }
+        .datac
+        {
+            
+            left: 50%;
+             position: absolute;
+            transform: translateX(-50%);
+            top: 55%; 
+            width: 80%;
+            height: 10%;
+        
+            position: absolute;
+            transform: translateX(-50%);
+            top: 52%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lobster', cursive;
+        }
+        .subdatac
+        {
+           
+            width: 80%;
+            height: 30%;
+          color: white;
+            position: absolute;
+            bottom: 3%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Lobster', cursive;
+             
+        }
+          
+        
+        .gallery1
+        {
+            height: 30%;
+            width: 20%;
+            
+            position: absolute;
+            left: 22%;
+            top: 15%;
+        }
+        .gallery2
+        {
+            height: 30%;
+            width: 34%;
+            
+            position: absolute;
+            left: 45%;
+            top: 15%;
+        }
+        .gallery3
+        {
+            height: 32%;
+            width: 34%;
+            
+            position: absolute;
+            left: 22%;
+            top: 55%;
+        }
+        .gallery4
+        {
+            height: 32%;
+            width: 20%;
+            
+            position: absolute;
+            left: 59%;
+            top: 55%;
+        }
+        
+
+
+        .h3
+        {
+            top: 5%;
+            position: absolute;
+            left:45%;
+            font-size: 180%;
+            }
+        .text1
+        {width: 70%;
+            height: 35%;
+           
+            position: absolute;
+            top: 20%;
+            font-size: 35px;
+            color: aliceblue;
+         
+        }
+            
+
+        .button1
+        {  
+            position: absolute;
+            width: 8%;
+            height: 10%;
+            
+            bottom: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        .btn1:hover
+       {
+           background-color: rgb(207, 238, 29);
+       }
+
+            .btn1
+            {
+                width: 100%;
+            height: 100%;
+            background-color: rgb(46, 204, 113);
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 5px;
+            color: white;
+            font-size: 27px;
+            font-family: 'Lobster', cursive;
+        
+            }
+            .fa-smile
+            {
+                color:grey;
+                font-size: 40px;
+            }
+            .fa-sun
+            {
+                color:grey;
+                font-size: 40px;
+            }
+            .fa-feather-alt
+            {
+                color:grey;
+                font-size: 40px;
+
+            }
+            .container7
+            {
+                width: 100%;
+            height: 10vh;
+            color:white;
+            background-color: grey;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            font-weight: bolder;
+            
+            }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container1">
+        <div class="overlay"></div>
+        <div class="text"><p class="slideInUp animated">passion a responsive free  template</p></div>
+            <div class="button fadeInUp animated btn11" data-wow-delay="2s">
+                <button class="btn hvr-bob ">Explore</button>
+        </div>
+    </div>
+    <div class="container2">
+        <h1 align="center" class="h1">Lorem Ipsum</h1>
+        <div class="icon">
+        <div class="icona">
+
+            <div class="circlea">
+                <i class="far fa-smile"></i>
+            </div>
+            <div class="contenta"><p class="wow fadeInUp animated" data-wow-delay=".5s">Hello</p></div>
+            <div class="subcontenta"><p class="wow fadeInUp animated" data-wow-delay=".7s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore officiis error consectetur repudiandae corrupti perferendis, dicta ea id doloribus nobis sed perspiciatis veritatis. Quisquam, natus eaque harum id illo neque............</p></div>
+
+        </div>
+        <div class="iconb">
+            <div class="circleb">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="contentb"><p class="wow fadeInUp animated"data-wow-delay=".9s">Strategy</p></div>
+            <div class="subcontentb"><p class="wow fadeInUp animated" data-wow-delay="1s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore officiis error consectetur repudiandae corrupti perferendis, dicta ea id doloribus nobis sed perspiciatis veritatis. Quisquam, natus eaque harum id illo neque............</p></div>
+
+        </div>
+        <div class="iconc">
+            <div class="circlec">
+                <i class="fas fa-feather-alt"></i>
+            </div>
+            <div class="contentc"><p class="wow fadeInUp animated" data data-wow-delay="1.2s">Soul</p></div>
+            <div class="subcontentc"><p class="wow fadeInUp animated" data-wow-delay="1.2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore officiis error consectetur repudiandae corrupti perferendis, dicta ea id doloribus nobis sed perspiciatis veritatis. Quisquam, natus eaque harum id illo neque............</p></div>
+
+        </div>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="image">
+                <figure class="imghvr-shutter-in-out-diag-2"style="height: 100%; width: 100%;">
+                        <img src="g.jpg"style="width: 100%; height: 100%;" class="wow fadeInUp animated">
+                        <figcaption style="background-image:url(h.jpg); background-size: 100% 100%;" >
+                            
+                        </figcaption>
+                    </figure>
+
+        </div>
+        <div class="matter">
+                <div class="mattera">
+                        <p class="wow fadeInUp animated">
+                            <q class="wow fadeInUp animated" data-wow-delay=".6s">
+                                DUIS EGIET EUISMOD ET <BR><br>
+                                &nbsp;&nbsp;
+                                LOREM PLACERAT TORTOR<BR><br> &nbsp;&nbsp;
+                                PROIN CONSEQUAT QUAM <BR> <br>&nbsp;&nbsp;
+                                LIBERO JUSTO.
+                        
+                                </q>
+                                <hr>
+                               <span class="wow fadeInUp animated">jhon doe</span>
+        
+                            
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="container4">
+            <h2 align="center" class="h2">THE BLOG</h2>
+        <div class="item1">
+            <div class="item1a">
+                <div class="imga">
+                        <figure class="imghvr-shutter-out-diag-1 wow fadeInUp animated" style="background-color:rgb(158, 44, 32);">
+                                <img src="i.jpg" height="250" width="100%">
+                                <figcaption style="background-image: url('e.jpg'); background-size: cover;">
+                                    
+                                </figcaption>
+                              </figure>
+                </div>
+                <div class="dataa">PASSION</div>
+                <div class="subdataa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nesciunt ad autem commodi delectus officiis consequatur hic! Illum, itaque incidunt error autem hic, perferendis aperiam quidem accusamus id ipsa nulla!</div>
+            </div>
+            <div class="item1b">
+                <div class="imgb">
+                        <figure class="imghvr-shutter-out-diag-1 wow fadeInUp animated" style="background-color:rgb(158, 44, 32);">
+                                <img src="f.jpg" height="250" width="100%">
+                                <figcaption style="background-image: url('h.jpg'); background-size:100% 100%;">
+                                    
+                                </figcaption>
+                              </figure>
+                </div>
+                <div class="datab">PASSION</div>
+                <div class="subdatab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, architecto autem quos, doloremque illo corporis rerum hic incidunt maiores pariatur eaque facilis delectus earum nihil neque quia commodi voluptatum repellat.</div>
+            </div>
+            <div class="item1c">
+                <div class="imgc">
+                        <figure class="imghvr-shutter-out-diag-1 wow fadeInUp animated" style="background-color:rgb(158, 44, 32);">
+                                <img src="d.jpg" height="250" width="100%">
+                                <figcaption style="background-image: url('j.jpg'); background-size:100% 100%;">
+                                    
+                                </figcaption>
+                              </figure>
+                </div>
+                <div class="datac">PASSION</div>
+                <div class="subdatac">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, modi sit est perspiciatis aspernatur, repudiandae, perferendis et fugiat nemo consequuntur ipsam error quam. Eos, molestias necessitatibus! Amet, error. Dignissimos, incidunt.</div>
+            </div>
+        </div>
+    </div>
+    <div class="container5">
+            <h1 align="center" class="h3">THE GALLERY</h1>
+            <div class="gallery1 wow fadeInUp animated" >
+                    <figure class="imghvr-shutter-in-out-diag-2"style="height: 100%; width: 100%;">
+                            <img src="k.jpg"style="width: 100%; height: 100%;" class="wow fadeInUp animated">
+                            <figcaption style="background-image:url(l.jpg); background-size: 100% 100%;" >
+                                
+                            </figcaption>
+                        </figure>
+    
+                </div>
+
+        
+        <div class="gallery2">
+                <figure class="imghvr-shutter-in-out-diag-2"style="height: 100%; width: 100%;">
+                        <img src="m.jpg"style="width: 100%; height: 100%;" class="wow fadeInUp animated">
+                        <figcaption style="background-image:url(n.jpg); background-size: 100% 100%;" >
+                            
+                        </figcaption>
+                    </figure>
+
+        </div>
+        <div class="gallery3">
+                <figure class="imghvr-shutter-in-out-diag-2"style="height: 100%; width: 100%;">
+                        <img src="o.jpg"style="width: 100%; height: 100%;" class="wow fadeInUp animated">
+                        <figcaption style="background-image:url(b.jpg); background-size: 100% 100%;" >
+                            
+                        </figcaption>
+                    </figure>
+
+        </div>
+        <div class="gallery4">
+            
+                <figure class="imghvr-shutter-out-diag-1" style="height: 100%; width: 100%;">
+                        <img src="n.jpg" style= "height: 100%; width: 100%;">
+                        <figcaption style="background-color:red; background-size: 100% 100%";>
+                            <font size="6" color="white"> TIME IS THE BEST TEACHER.<BR>
+                            TIME IS THE COUNSLER OF ALL..</font>
+                        </figcaption>
+                      </figure>
+        </div>
+    </div>
+    <div class="container6">
+        <div class="text1" data-wow-delay="2s">
+            <p align="center" class="wow fadeInUp animated"> PASSION FREE RESPONSIVE EMAIL TEMPLATE</p></div>
+        <div class="button1">
+            <button1 class=" btn1 hvr-grow shadow">get it now</button1>
+        </div>     
+    </div>
+    <div class="container7">
+        Design & Developed by: &nbsp;SHASHANK SAXENA
+
+    </div>
+    <script src="wow.js">
+    </script>
+     <script>
+         new WOW().init();
+     </script>
+</body>
+</html>
